@@ -10,7 +10,6 @@ const Header = () => {
   const [showMenu1, setshowMenu1] = useState(false);
   const Navbar = document.getElementById('Navbar');
   
-console.log(showMenu1)
   return (
      
 
