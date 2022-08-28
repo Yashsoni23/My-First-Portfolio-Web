@@ -13,7 +13,6 @@ const Home = () => {
 
 
     const [imgData, setImgData] = useState(Imgs);
-    console.log(setImgData);
 
     return (
         <>
@@ -286,14 +285,14 @@ const Home = () => {
                                         <legend> Name*</legend>
                                         <label htmlFor="Name" className="label" min="5">
                                             <input required type="text" name="Name" id="Name"
-                                                autocomplete="off" className='input_width' />
+                                             className='input_width' />
                                         </label>
                                     </div>
                                     <div className="Email feild_container ">
                                         <legend> E-mail*</legend>
                                         <label htmlFor="E-mail" className="label">
                                             <input required type="email" name="E-mail" id="E-mail"
-                                                autoComplete="off" className='input_width' />
+                                             className='input_width' />
                                         </label>
 
                                     </div>
@@ -301,14 +300,14 @@ const Home = () => {
                                         <legend>Subject *</legend>
                                         <label htmlFor="Subject" className="label">
                                             <input required type="Subject" name="Subject" id="Subject"
-                                                autoComplete="off" className='input_width' />
+                                             className='input_width' />
                                         </label>
 
                                     </div>
                                     <div className="Massage feild_container ">
                                         <legend> Massage*</legend>
                                         <label htmlFor="Subject" className="label">
-                                            <textarea title="Massage" name="Massage" id="Massage" autoComplete="off" className='input_width'></textarea>
+                                            <textarea title="Massage" name="Massage" id="Massage" className='input_width'></textarea>
                                         </label>
 
                                     </div>

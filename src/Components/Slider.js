@@ -4,43 +4,18 @@ import { BiRightArrow, BiLeftArrow } from 'react-icons/bi'
 
 const Slider = ({ imgData }) => {
     const [SlideIndex, setSlideIndex] = useState(1);
-    const [SlideIndex2, setSlideIndex2] = useState(2);
-    // console.log(SlideIndex)
     const nextSlide = () => {
-        if (SlideIndex !== imgData.length) {
-            setSlideIndex(SlideIndex + 1);
-        }
-        else if (SlideIndex === imgData.length) {
+        if(SlideIndex == 5) {
             setSlideIndex(1);
-        }
-        if (SlideIndex !== 3) {
-            setSlideIndex2(SlideIndex2 + 1);
-        }
-        else if (SlideIndex === 3) {
-            setSlideIndex2(1);
-
+        } else {
+            setSlideIndex(SlideIndex+1);
         }
     }
     const prevSlide = () => {
-        if (SlideIndex !== 1) {
-            setSlideIndex(SlideIndex - 1);
-        }
-        else if (SlideIndex === 1) {
-            setSlideIndex(imgData.length);
-        }
-        switch (SlideIndex) {
-            case 1:
-                setSlideIndex2(3);
-                break;
-            case 2:
-                setSlideIndex2(4);
-                break;
-            case 3:
-                setSlideIndex2(1);
-                break;
-            case 4:
-                setSlideIndex2(2);
-                break;
+        if(SlideIndex == 1) {
+            setSlideIndex(2)
+        } else {
+            setSlideIndex(SlideIndex-1);
         }
     }
     return (
@@ -58,25 +33,19 @@ const Slider = ({ imgData }) => {
                     <div className="slides">
                         <div className="slide1 ">
                             {imgData.map((obj, index) => {
-                                // console.log(index);
                                 return (
-                                    <>
-                                        <div key={obj.id} className='slide2 slide_2 '>
-                                            <img src={`../images/sketches/img${SlideIndex}.jpg`} alt="images" className="Slide Slide_Home mobile" />
+                                        <div key={"slide1"+index} className='slide2 slide_2 '>
+                                            <img src={require(`../../public/images/sketches/img${SlideIndex}.jpg`)} alt="slider1-img" className="Slide Slide_Home mobile" />
                                         </div>
-                                    </>
                                 )
                             })}
                         </div>
                         <div className="slide2 mobile_slide">
                             {imgData.map((obj, index) => {
-                                // console.log(index + 1);
                                 return (
-                                    <>
-                                        <div key={obj.id} className='slide2 mobile_slide2 '>
-                                            <img src={`../images/sketches/img${SlideIndex2}.jpg`} alt="images" className="Slide " />
+                                        <div key={"slide2"+index} className='slide2 mobile_slide2 '>
+                                            <img src={require(`../../public/images/sketches/img${SlideIndex+1}.jpg`)} alt="slider2-img" className="Slide " />
                                         </div>
-                                    </>
                                 )
                             })}
                         </div>
