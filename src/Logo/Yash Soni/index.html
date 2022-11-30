@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--  AOS for On Scoll Efect -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font Awesome kit  -->
+    <script src="https://kit.fontawesome.com/c97f5fc99a.js" crossorigin="anonymous"></script>
+    <!-- font Awesome icon styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- main Css -->
+    <link rel="stylesheet" href="Home.css">
+    <!-- reCapatcha  -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Favicon -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="YS favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="YS favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="YS favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="YS favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="YS favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="YS favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="YS favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="YS favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="YS favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="YS favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="YS favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="YS favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="YS favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="YS favicon/ms-icon-144x144.png">
+    <!-- <meta name="theme-color" content="#ffffff"> -->
+    <!-- <link rel="manifest" href="Favicon/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <!-- <meta name="msapplication-TileImage" content=""> -->
+    <!-- <meta name="theme-color" content="#ffffff"> -->
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="teg_name">YASH SONI.</h1>
+        <nav>
+
+            <div class="navbar" id="navbar">
+                <ul class="navbar_list" id="navbar_list">
+                    <li><a onclick="closeBtn()" class="navbar_link" id="navbar_link" data-aos="fade-right"
+                            href="#Home">Home</a></li>
+                    <li><a onclick="closeBtn()" class="navbar_link" id="navbar_link1" data-aos="fade-right"
+                            href="#About-me">About</a>
+                    </li>
+                    <li><a onclick="closeBtn()" class="navbar_link" id="navbar_link2" data-aos="fade-right"
+                            href="#Skills">Skills</a></li>
+                    <li><a onclick="closeBtn()" class="navbar_link" id="navbar_link3" data-aos="fade-right"
+                            href="#Projects">Projects</a>
+                    </li>
+                    <li><a onclick="closeBtn()" class="navbar_link" id="navbar_link4" data-aos="fade-right"
+                            href="#Sketches">Sketches</a>
+                    </li>
+                    <li><a onclick="closeBtn()" class="navbar_link" id="navbar_link5" data-aos="fade-right"
+                            href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mobile_navbar_btn">
+            <ion-icon id="openbtn" onclick="openBtn()" name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon id="closebtn" onclick="closeBtn()" name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+    <!-- Section-1 Start -->
+
+
+    <section class="Section_Home" id="Home">
+        <div class="Social_Right">
+            <div class="LinkedIn">
+                <a title="LinkedIn" href="https://www.linkedin.com/in/yash-simejiya-8288a6225/
+               " rel="noopener" target="_blank">
+                    <img title="LinkedIn" src="linkedin.png" alt="" class="social"></a>
+            </div>
+            <div class="GitHub">
+                <a title="GitHub" href=" https://github.com/Yashsoni23" rel="noopener" target="_blank">
+                    <img title="GitHub" src="github.png" alt="" class="social">
+                </a>
+
+            </div>
+            <div class="InstaGram">
+                <a title="InstaGram" href=" https://www.instagram.com/itsyashsimejiya/" rel="noopener" target="_blank">
+                    <img title="InstaGram" src="instagram.png" alt="" class="social">
+                </a>
+
+            </div>
+            <div class="HackerRank">
+                <a title="HackerRank" href=" https://www.hackerrank.com/yashsoni48678" rel="noopener" target="_blank">
+                    <img title="HackerRank" src="hackerrank.png" alt="" class="social">
+                </a>
+
+            </div>
+            <div class="Twitter">
+                <a title="Twitter" href=" https://twitter.com/YashSon19998199
+                " rel="noopener" target="_blank">
+                    <img title="Twitter" src="twitter.png" alt="" class="social">
+                </a>
+            </div>
+        </div>
+        <div class="Theme_div ">
+            <span class="color Red"></span>
+            <span class="color Green"></span>
+            <span class="color Blue"></span>
+            <span class="color Light"></span>
+            <span class="color Dark"></span>
+        </div>
+
+        <div class="My_Photo">
+            <div class="Photo" data-aos="flip-left">
+                <div class="photo2"></div>
+                <!-- <img class="imgYash" src="graph.png" alt="svg" srcset="">
+                <img class="imgYash" src="Yash.png" alt="svg" srcset=""> -->
+            </div>
+        </div>
+        <div class="main_contain">
+            <div class="Quotes">
+                <div class="tegself" data-aos="zoom-in">
+                    <h1 class="self">I'm <span class="programmer">{ Programmer }</span></h1>
+                </div>
+                <!-- <br><br><br><br><br> -->
+                <br>
+                <div class="quote" data-aos="zoom-in-down">
+                    <h4 class="main_quote"><br><br>
+                        <span class="Q">&#8220;</span><br> “Programming made the impossible possible. You can have a
+                        only null object and a constant variable.”
+                        <br><span class="U">&#8222;</span>
+                    </h4><br>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Section-2 Start -->
+    <section class="Section_About" id="About-me">
+        <div class="Heading">
+            <h1 class="Head" data-aos="zoom-in-up">About me</h1>
+        </div>
+        <div class="grid_container">
+            <div class="intro_container">
+                <div class="article_left" data-aos="zoom-in-up">
+                    <article class="article"><br><span class="O">&#8220;</span><br>
+                        Hey!! <br> I'm Yash.I am currently doing My BCA from SilverOak University .I have much curious about To learn new technology and build something which are fix some problem,so that I trying to shape my career in IT industry.All tech fields are super attactive but in some of them especially my favourites are Competative Coding,Machine Learning,Data Science and ios Development.
+                        With this The Curiousity can't calm me down, I always make new sketches and spend a few of my hours when I want to reconnect.Some sketches i have added to this website, on Sketches Section so you must be check it out.
+                        So it's all About me if you have any question or suggestion to ask me via drop massage in Contact form or E-mail. <br>
+                    Have a Nice Day!!
+                        <br><span class="T">&#8222;</span>
+                    </article>
+                </div>
+                <div class="side_right">
+                    <div class="Contain_img">
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Section-3 Start -->
+    <section class="Section_Skills" id="Skills">
+        <div class="Heading2">
+            <h1 class="Head2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500"
+                data-aos-offset="0">Skills</h1>
+        </div>
+
+        <div class="Skill_set_container" id="Skill_set_container" data-aos="fade-right">
+            <div class="Skill_img_container">
+                <div class="Skill_img"></div>
+            </div>
+
+            <div class="Skill_set" data-aos="fade-left">
+                <h3>&#9674; &nbsp; Liabrary & Frame Work</h3>
+                <h4> I currently Learning MERN stack development for not that its are demanding in market but, because this all are togather able to build ultimate dynamic website.</h4>
+                <br>
+                <h3>&#9674; &nbsp; Langauges</h3>
+                <br>
+
+                <h3>Design</h3>
+                <div class="Progress_bar">
+                    <span class="DESIGN Range">
+                        <span class="Skill_persent">
+                            <h6> 85%</h6>
+                        </span>
+                    </span>
+                </div>
+
+                <h3>HTML</h3>
+                <div class="Progress_bar">
+                    <span class="HTML Range">
+                        <span class="Skill_persent">
+                            <h6> 98%</h6>
+                        </span>
+                    </span>
+                </div>
+
+                <h3>CSS</h3>
+                <div class="Progress_bar">
+                    <span class="CSS Range">
+                        <span class="Skill_persent">
+                            <h6> 95%</h6>
+                        </span>
+                    </span>
+                </div>
+
+                <h3>JAVASCRIPT</h3>
+                <div class="Progress_bar">
+                    <span class="JS Range">
+                        <span class="Skill_persent">
+                            <h6> 75%</h6>
+                        </span>
+                    </span>
+                </div>
+
+                <h3>J-QUERY</h3>
+                <div class="Progress_bar">
+                    <span class="JQUERY Range">
+                        <span class="Skill_persent">
+                            <h6> 70%</h6>
+                        </span>
+                    </span>
+                </div>
+
+                <h3>PHP</h3>
+                <div class="Progress_bar">
+                    <span class="PHP Range">
+                        <span class="Skill_persent">
+                            <h6>65%</h6>
+                        </span>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Section-4 Start -->
+    <section class="Section_Projects" id="Projects">
+        <!-- <div class="heading4"></div> -->
+        <!-- Slider -->
+        <div class="container_slider">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img  class="img" src="slide1.jpg" alt="" srcset="">
+                </div>
+                <div class="slide">
+                    <img class="img" src="slide2.jpg" alt="" srcset="">
+                </div>
+                <div class="slide">
+                    <img class="img" src="slide3.jpg" alt="" srcset="">
+                </div>
+                <div class="slide">
+                    <img class="img" src="slide4.jpg" alt="" srcset="">
+                </div>
+                <div class="slide">
+                    <img class="img" src="slide5.jpg" alt="" srcset="">
+                </div>
+
+            </div>
+                <div id="prev_slide" class="slide_btn"></div>
+                <div id="next_slide" class="slide_btn"></div>
+            <div class="slide_navlinks ">
+                <div class="slider_navlink active"></div>
+                <div class="slider_navlink"></div>
+                <div class="slider_navlink"></div>
+                <div class="slider_navlink"></div>
+                <div class="slider_navlink"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="heading79"><h2 class="h2o"> Projects</h2></div>
+
+        <div class="main_container">
+            <div class="container" data-aos="fade-left">
+                <div class="prj_container">
+                    <div class="WebImg img1">
+                        <div class="Line"></div>
+                    </div>
+                    <h2>Websites</h2>
+                </div>
+                <div class="prj_container">
+                    <div class="WebImg img2">
+                    </div>
+                    <h2>C Programms</h2>
+                </div>
+            </div>
+            
+
+            <div class="container" data-aos="fade-right">
+                <div class="prj_container">
+
+                    <div class="WebImg img3">
+                        <img src="" alt="">
+                        <div class="Line"></div>
+                    </div>
+                    <h2 >C++ Programms</h2>
+                </div>
+                <div class="prj_container">
+                    <div class="WebImg img4">
+                        <img src="" alt="">
+                    </div>
+                    <h2>JS Programms</h2>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Section-5 Start -->
+    <section class="section_Sketch" id="Sketches">
+
+        <div class="container_Outer">
+            <div class="Sketch_container" data-aos="fade-right">
+                <div class="inner_container sketch_1"></div>
+                <div class="inner_container sketch_2"></div>
+            </div>
+            <div class="Sketch_container2">
+
+                <div class="inner_container sketch_3" data-aos="zoom-in-down"></div>
+                <div class="inner_container sketch_4" data-aos="zoom-in-down"></div>
+
+            </div>
+
+
+            <div class="Sketch_container" data-aos="fade-left">
+                <div class="inner_container sketch_5"></div>
+                <div class="inner_container sketch_6"></div>
+
+            </div>
+        </div>
+        <div class="text_container">
+            <div class="Heading5 shadow">
+                <h1 class="Head5">My Sketches</h1>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------section-6 - starts----------------------- -->
+
+    <section class="section_Contect" id="Contact">
+
+
+        <div class="Contact_header">
+            <h1 class="Contact_Head">Get in Touch</h1><br>
+            <h5>Feel free to drop us a line to contact us</h5>
+        </div>
+
+
+        <div class="Contact_flex_container" data-aos="fade-left">
+            <form action="https://formspree.io/f/xpznagoe" method="POST">
+                <div class="form_container">
+                    <div class="form_container_inner">
+                        <div class="name feild_container ">
+                            <legend> Name*</legend>
+                            <label for="Name" class="label" min="5">
+                                <input required placeholder="What's Your Name?" type="text" name="Name" id="Name"
+                                    autocomplete="off">
+                            </label>
+                        </div>
+                        <div class="Email feild_container ">
+                            <legend> E-mail*</legend>
+                            <label for="E-mail" class="label">
+                                <input required placeholder="abc678@xyz.com" type="email" name="E-mail" id="E-mail"
+                                    autocomplete="off">
+                            </label>
+
+                        </div>
+                        <div class="Subject feild_container ">
+                            <legend>Subject *</legend>
+                            <label for="Subject" class="label">
+                                <input required placeholder="Subject : -" type="Subject" name="Subject" id="Subject"
+                                    autocomplete="off">
+                            </label>
+
+                        </div>
+                        <div class="Massage feild_container ">
+                            <legend> Massage*</legend><br>
+                            <label for="Subject" class="label">
+                                <textarea title="Massage" name="Massage" id="Massage" autocomplete="off"></textarea><br>
+                            </label>
+                            <br>
+                            <button type="submit" id="btn">Send</button>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+
+
+
+            <div class="Contact_flex_inner_container" data-aos="fade-right">
+
+                <div class="Head_container">
+                    <h2>Feel Free To Contact</h2>
+                    <h6 class="para">Hello Everyone! Have a great day :) I am here to help you. If you want to know
+                        something or you
+                        have
+                        any suggestion then please mail me. Thank You.</h6>
+                </div>
+                <div class="col_container">
+                    <div class="address_container">
+                        <div class="contain map"><img src="map.png" alt="" class="MEW"></div>
+                        <div class="contain email"><img src="email.png" alt="" class="MEW"></div>
+                        <div class="contain web"><img src="globe.png" alt="" class="MEW"></div>
+                    </div>
+                    <div class="main_container3">
+                        <div class="address container2">
+                            <h3>Vatva,Ahemedabad</h3>
+                        </div>
+
+                        <div class="container2 email">
+                            <h3>Yashsoni48678@gmail.com</h3>
+                        </div>
+
+                        <div class="container2 web">
+                            <h3>www.Yashsoni.net.in</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <h4><span class="fa fa-copyright" aria-hidden="true"></span> Yash Soni 2022</h4>
+                <div class="links">
+                    <a title="LinkedIn" rel="noopener" target="_blank"
+                        href="https://www.linkedin.com/in/yash-simejiya-8288a6225/">
+                        <div class="fa fa-linkedin"></div>
+                    </a>
+                    <a title="GitHub" rel="noopener" target="_blank" href="https://github.com/Yashsoni23">
+                        <div class="fa fa-github"></div>
+                    </a>
+                    <a title="InstaGram" rel="noopener" target="_blank"
+                        href="https://www.instagram.com/itsyashsimejiya/">
+                        <div class="fa fa-instagram"></div>
+                    </a>
+                    <a title="Twitter" rel="noopener" target="_blank" href="https://twitter.com/YashSon19998199">
+                        <div class="fa fa-twitter"></div>
+                    </a>
+                    <a title="HackerRank" rel="noopener" target="_blank"
+                        href="https://www.hackerrank.com/yashsoni48678">
+                        <div class="fa fa-facebook"></div>
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+
+    </section>
+
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <SCript>
+        AOS.init();
+        if (window.innerWidth < 450) {
+            console.log(window.innerWidth);
+            $('.Line').toggleClass('.Line');
+        }
+
+        //Recapatcha
+        window.onload = function () {
+            var el = document.getElementById('g-recaptcha-response');
+            if (el) {
+                el.setAttribute('required', 'required');
+            }
+        }
+
+    </SCript>
+
+</body>
+
+</html>
